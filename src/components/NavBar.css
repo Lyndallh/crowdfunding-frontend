@@ -1,0 +1,13 @@
+.navbar-ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  height: 48px;
+  line-height: normal;
+  padding: 0 4px;
+  padding-left: 30px;
+}
