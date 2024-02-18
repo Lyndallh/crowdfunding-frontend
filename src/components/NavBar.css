@@ -1,3 +1,8 @@
+ 
+a:-webkit-any-link {
+  text-decoration: none;
+  color: var(--sand)}
+
 .navbar-ul {
   list-style-type: none;
   display: flex;
@@ -10,4 +15,15 @@
   line-height: normal;
   padding: 0 4px;
   padding-left: 30px;
+}
+
+.navbar-ul li {
+  display: inline;
+  padding: 0 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--sand); 
+
 }
