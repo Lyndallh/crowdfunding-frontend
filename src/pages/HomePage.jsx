@@ -3,7 +3,14 @@ import ProjectCard from "../components/ProjectCard.jsx";
 import "./HomePage.css";
 
 function HomePage() {
-    const  {projects} = useProjects();
+    const {projects, isLoading, error} = useProjects();
+
+    if (isLoading) {
+        return (<p>loading...</p>)
+    }
+    if (error) {
+        return (<p>{error.message}</p>)
+    }
     return(
         <div>
             <div id="project-list">

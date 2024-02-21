@@ -3,7 +3,7 @@ import "./ProjectCard.css";
 
 function ProjectCard(props) {
     const { projectData } = props; // destructuring the props object
-    const projectLink = `projects/${projectData.id}/`;
+    const projectLink = `project/${projectData.id}/`;
     return (
         <div className="project-card">
             <Link to={projectLink}>
