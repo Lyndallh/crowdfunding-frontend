@@ -17,7 +17,7 @@ a:-webkit-any-link {
   padding-left: 30px;
 }
 
-.navbar-ul li {
+#navbar-list a{
   display: inline;
   padding: 0 10px;
   font-size: 1.2rem;
@@ -25,5 +25,4 @@ a:-webkit-any-link {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--sand); 
-
 }
