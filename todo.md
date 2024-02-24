@@ -1,6 +1,19 @@
-1. [ ] Create a POST request/form for User sign-up.
-2. [ ] Create a POST request/form for creating a new 
-   1. [ ] crowdfunding project, 
-   2. [ ] [ ] pledge, etc.
-2. [ ] [ ] Have a think about errors - do you need/want to handle errors on any of these POST requests? 
-3. [ ] [ ] What would that look like? Have a look at the previous contentblock for an example of error handling on a GET request!
+Jobs for Sunday 25/2:
+
+1. [ ] Create a POST request/form for USER SIGNUP
+   1. [ ] Form component
+   2. [ ] on login page or standalong page?
+      1. [ ] Place on navbar?
+   3. [ ] Add state to form
+   4. [ ] API for post-user.js
+   5. [ ] call the postuser function from the form
+   6. [ ] error handling? (can look at GET thinkific for inspo)
+
+
+2. [ ] Create a POST request/form for creating a NEW PROJECT
+   1. [ ] add subjobs here
+
+3. [ ] Create a POST request/form for creating a NEW PLEDGE
+   1. [ ] add subjobs here
+
+4. [ ] DEPLOYMENT
