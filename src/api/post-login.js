@@ -7,7 +7,7 @@ async function postLogin(username,password) {
         },
         body: JSON.stringify({
             "username": username,
-            "password": password
+            "password": password,
         }),
     });
     if (!response.ok){

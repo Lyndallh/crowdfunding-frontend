@@ -1,11 +1,13 @@
 import { useState } from "react";
 import postLogin from "../api/post-login";
+import { useNavigate } from "react-router-dom";
 
 function LoginForm() {
-const[credentials, setCredentials] = useState({
-    username: "",
-    password: "",
-});
+    const navigate = useNavigate();
+    const[credentials, setCredentials] = useState({
+        username: "",
+        password: "",
+    });
 
 const handleChange = (event) => {
     const { id, value } = event.target;
@@ -25,7 +27,8 @@ const handleSubmit = (event) => {
             credentials.username, 
             credentials.password
         ).then((response) => {
-            console.log(response);
+            window.localStorage.setItem("token", response.token);
+            navigate("/"); // redirect to home page
         });
     }
 };
