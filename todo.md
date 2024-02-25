@@ -14,7 +14,7 @@ Jobs for Sunday 25/2:
       1. [x] posting username and password
       2. [x] posting email/first_name/last_name feilds
    8. [ ] error handling? (can look at GET thinkific for inspo)
-      1. [ ] missing required feilds
+      1. [x] missing required feilds
 
 
 2. [ ] Create a POST request/form for creating a NEW PROJECT
@@ -26,8 +26,8 @@ Jobs for Sunday 25/2:
    6. [x] api
    7. [ ] test issues uncovered
       1. [x] end date on form
-      2. [x] isOpen needs to replace is_open
-   8. [ ] thinking about credentials of user posting project, is this alread working?
+      2. [x] isOpen needs to be is_open
+   8. [x] thinking about credentials of user posting project, is this alread working?
    
 
 3. [ ] Create a POST request/form for creating a NEW PLEDGE
