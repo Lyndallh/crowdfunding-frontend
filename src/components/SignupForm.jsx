@@ -32,7 +32,10 @@ const handleSubmit = (event) => {
     } else if (user.username && user.password){
         postUser(
             user.username, 
-            user.password
+            user.password,
+            user.email,
+            user.first_name,
+            user.last_name
         ).then(() => {
             postLogin(
                 user.username, 

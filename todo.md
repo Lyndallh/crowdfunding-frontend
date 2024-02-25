@@ -12,7 +12,7 @@ Jobs for Sunday 25/2:
    6. [x] include login as part of signup function + redirect
    7. [x] test - create a new user
       1. [x] posting username and password
-      2. [ ] posting email/first_name/last_name feilds
+      2. [x] posting email/first_name/last_name feilds
    8. [ ] error handling? (can look at GET thinkific for inspo)
 
 
