@@ -10,6 +10,7 @@ import NavBar from "./components/NavBar";
 import LoginPage from "./pages/LoginPage";
 import { AuthProvider } from "./components/AuthProvider";
 import SignupPage from "./pages/SignupPage";
+import NewProjectPage from "./pages/NewProjectPage";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,8 @@ const router = createBrowserRouter([
       { path: "/contact", element: <ContactPage /> },
       { path: "/login", element: <LoginPage /> },
       { path: "/signup", element: <SignupPage /> },
+      { path: "/newproject", element: <NewProjectPage /> },
+      { path: "*", element: <h1>Not Found</h1> },
     ],
   },
 ]);

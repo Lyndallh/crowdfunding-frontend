@@ -41,10 +41,10 @@ const handleSubmit = (event) => {
             navigate("/projects/:id"); // redirect to home page
             });
     };
-    }
 };
 
-    return (
+
+return (
     <form>START A NEW PROJECT
         <div>
             <label htmlFor="title">Title:</label>
@@ -98,5 +98,5 @@ const handleSubmit = (event) => {
         </button>   
     </form>  
     );
-
+};
 export default NewProjectForm;
