@@ -1,6 +1,6 @@
 Jobs for Sunday 25/2:
 
-1. [ ] Create a POST request/form for USER SIGNUP
+1. [x] Create a POST request/form for USER SIGNUP
    1. [x] Form component
       1. [x] on login page or 
       2. [x] standalone page
@@ -17,7 +17,15 @@ Jobs for Sunday 25/2:
 
 
 2. [ ] Create a POST request/form for creating a NEW PROJECT
-   1. [ ] add subjobs here
+   1. [x] form with state
+   2. [x] page
+   3. [ ] url on main
+   4. [ ] navigate to project page after submit
+   5. [ ] navbar
+   6. [ ] api
+   7. [ ] test
+   8. [ ] thinking about credentials of user posting project, is this alread working?
+   
 
 3. [ ] Create a POST request/form for creating a NEW PLEDGE
    1. [ ] add subjobs here
