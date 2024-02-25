@@ -9,6 +9,7 @@ import ContactPage from "./pages/ContactPage";
 import NavBar from "./components/NavBar";
 import LoginPage from "./pages/LoginPage";
 import { AuthProvider } from "./components/AuthProvider";
+import SignupPage from "./pages/SignupPage";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       { path: "/about", element: <AboutPage /> },
       { path: "/contact", element: <ContactPage /> },
       { path: "/login", element: <LoginPage /> },
+      { path: "/signup", element: <SignupPage /> },
     ],
   },
 ]);
