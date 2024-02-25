@@ -14,16 +14,19 @@ Jobs for Sunday 25/2:
       1. [x] posting username and password
       2. [x] posting email/first_name/last_name feilds
    8. [ ] error handling? (can look at GET thinkific for inspo)
+      1. [ ] missing required feilds
 
 
 2. [ ] Create a POST request/form for creating a NEW PROJECT
    1. [x] form with state
    2. [x] page
-   3. [ ] url on main
+   3. [x] url on main
    4. [ ] navigate to project page after submit
    5. [ ] navbar
-   6. [ ] api
-   7. [ ] test
+   6. [x] api
+   7. [ ] test issues uncovered
+      1. [x] end date on form
+      2. [x] isOpen needs to replace is_open
    8. [ ] thinking about credentials of user posting project, is this alread working?
    
 
