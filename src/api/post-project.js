@@ -6,7 +6,7 @@ async function postProject(title, description, goal, image, is_open, endDateTime
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            "owner": 1, // hardcoding the owner for now, will fix later
+            "owner": owner,
             "title": title,
             "description": description,
             "goal": goal,

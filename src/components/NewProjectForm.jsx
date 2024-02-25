@@ -7,12 +7,14 @@ import { useAuth } from "../hooks/use-auth";
 function NewProjectForm() {
     const navigate = useNavigate();// use the navigate hook
     const {auth, setAuth} = useAuth();
+    console.log(auth);
     const[project, setProject] = useState({
+        owner: useAuth().auth.user.id,
         title: "",
         description : "",
         goal:"",
         image: "",
-        is_open:"",
+        isOpen:"",
         endDateTime:"",
     });
 
@@ -27,15 +29,17 @@ const handleChange = (event) => {
 const handleSubmit = (event) => {
     event.preventDefault();
     console.log("project handlesubmit called")
-    if (!project.title || !project.description || !project.goal || !project.image || !project.is_open || !project.endDateTime) {
+    if (!project.title || !project.description || !project.goal || !project.image || !project.isOpen || !project.endDateTime) {
         console.log("missing required fields");
-    } else {
+        console.log(project);
+    } else if (auth.token) {
         postProject(
+            project.owner,
             project.title,
             project.description,
             project.goal,
             project.image,
-            project.is_open,
+            project.isOpen,
             project.endDateTime
         ).then(() => {
             navigate("/projects/:id"); // redirect to home page
@@ -88,6 +92,15 @@ return (
                 type="boolean" 
                 id="isOpen" 
                 placeholder="Open?"
+                onChange={handleChange}
+            />      
+        </div>
+        <div>
+            <label htmlFor="endDateTime">Closing Date:</label>
+            <input 
+                type="datetime-local" 
+                id="endDateTime" 
+                placeholder="when does it end?"
                 onChange={handleChange}
             />      
         </div>
