@@ -14,8 +14,8 @@ function NewProjectForm() {
         description : "",
         goal:"",
         image: "",
-        isOpen:"",
-        endDateTime:"",
+        is_open:"",
+        date_close:"",
     });
 
 const handleChange = (event) => {
@@ -29,18 +29,20 @@ const handleChange = (event) => {
 const handleSubmit = (event) => {
     event.preventDefault();
     console.log("project handlesubmit called")
-    if (!project.title || !project.description || !project.goal || !project.image || !project.isOpen || !project.endDateTime) {
+    if (!project.title || !project.description || !project.goal || !project.image || !project.is_open || !project.date_close) {
         console.log("missing required fields");
         console.log(project);
     } else if (auth.token) {
+        console.log("auth token exists");
+        console.log(project);
         postProject(
             project.owner,
             project.title,
             project.description,
             project.goal,
             project.image,
-            project.isOpen,
-            project.endDateTime
+            project.is_open,
+            project.date_close
         ).then(() => {
             navigate("/projects/:id"); // redirect to home page
             });
@@ -87,19 +89,19 @@ return (
             />
         </div>
         <div>
-            <label htmlFor="isOpen">Open?:</label>
+            <label htmlFor="is_open">Open?:</label>
             <input 
                 type="boolean" 
-                id="isOpen" 
+                id="is_open" 
                 placeholder="Open?"
                 onChange={handleChange}
             />      
         </div>
         <div>
-            <label htmlFor="endDateTime">Closing Date:</label>
+            <label htmlFor="date_close">Closing Date:</label>
             <input 
                 type="datetime-local" 
-                id="endDateTime" 
+                id="date_close" 
                 placeholder="when does it end?"
                 onChange={handleChange}
             />      
