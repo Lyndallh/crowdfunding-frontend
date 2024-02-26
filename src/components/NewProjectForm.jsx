@@ -3,7 +3,6 @@ import postProject from "../api/post-project";
 
 import { useNavigate } from "react-router-dom"; // import the useNavigate hook
 import { useAuth } from "../hooks/use-auth";
-import getProject from "../api/get-project";
 
 function NewProjectForm() {
     const navigate = useNavigate();// use the navigate hook
