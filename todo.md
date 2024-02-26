@@ -21,7 +21,7 @@ Jobs for Sunday 25/2:
    1. [x] form with state
    2. [x] page
    3. [x] url on main
-   4. [ ] navigate to project page after submit
+   4. [x] navigate to project page after submit
    5. [ ] navbar
    6. [x] api
    7. [ ] test issues uncovered
@@ -29,8 +29,16 @@ Jobs for Sunday 25/2:
       2. [x] isOpen needs to be is_open
    8. [x] thinking about credentials of user posting project, is this alread working?
    
-
 3. [ ] Create a POST request/form for creating a NEW PLEDGE
-   1. [ ] add subjobs here
+   1. [ ] form with state
+      1. [ ] credentials
+   2. [ ] page
+   3. [ ] url on main
+   4. [ ] navigate to project page after submit
+   5. [ ] add link on project page
+   6. [ ] api
+   7. [ ] test issues uncovered:
+      1. [ ] 
+
 
 4. [ ] DEPLOYMENT
