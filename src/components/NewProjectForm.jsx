@@ -3,13 +3,13 @@ import postProject from "../api/post-project";
 
 import { useNavigate } from "react-router-dom"; // import the useNavigate hook
 import { useAuth } from "../hooks/use-auth";
+import getProject from "../api/get-project";
 
 function NewProjectForm() {
     const navigate = useNavigate();// use the navigate hook
     const {auth, setAuth} = useAuth();
     console.log(auth);
     const[project, setProject] = useState({
-        owner: useAuth().auth.user.id,
         title: "",
         description : "",
         goal:"",
@@ -36,17 +36,18 @@ const handleSubmit = (event) => {
         console.log("auth token exists");
         console.log(project);
         postProject(
-            project.owner,
             project.title,
             project.description,
             project.goal,
             project.image,
             project.is_open,
-            project.date_close
-        ).then(() => {
-            navigate("/projects/:id"); // redirect to home page
-            });
-    };
+            project.date_close,
+        ).then((
+            response
+        ) => {
+            navigate(`/project/${response.id}`); // redirect to home page
+        }
+    )};
 };
 
 

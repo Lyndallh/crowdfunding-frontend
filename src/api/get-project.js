@@ -1,3 +1,5 @@
+import { createRoutesFromChildren } from "react-router-dom";
+
 async function getProject(projectId) {
     const url = `${import.meta.env.VITE_API_URL}/projects/${projectId}/`;
     const response = await fetch(url,{method:"GET"});
@@ -11,6 +13,6 @@ async function getProject(projectId) {
         throw new Error(errorMessage);
     }
     return await response.json();
-}
+};
 
 export default getProject;
