@@ -44,7 +44,7 @@ const handleSubmit = (event) => {
         ).then((
             response
         ) => {
-            navigate(`/project/${response.id}`); // redirect to home page
+            navigate(`/project/${response.id}`); // redirect to project page
         }
     )};
 };

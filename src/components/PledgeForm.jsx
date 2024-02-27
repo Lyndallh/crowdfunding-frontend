@@ -4,16 +4,19 @@ import postPledge from "../api/post-pledge";
 import { useNavigate } from "react-router-dom"; // import the useNavigate hook
 import { useAuth } from "../hooks/use-auth";
 
-function NewPledgeForm() {
-    const navigate = useNavigate();// use the navigate hook
+
+const initFormState = {
+    amount: "",
+    comment: "",
+    anonymous: "",
+}
+
+function PledgeForm({ projectId }) {
+    const [isLoading, setIsLoading] = useState(false);
+    const navigate = useNavigate()
     const {auth, setAuth} = useAuth();
     console.log(auth);
-    const[pledge, setPledge] = useState({
-        amount: "",
-        comment: "",
-        anonymous: "",
-        project: "",
-    });
+    const[pledge, setPledge] = useState(initFormState);
 
 const handleChange = (event) => {
     const { id, value } = event.target;
@@ -23,31 +26,38 @@ const handleChange = (event) => {
     }));
 };
 
-const handleSubmit = (event) => {
+const handleSubmit = async (event) => {
     event.preventDefault();
     console.log("pledge handlesubmit called")
-    if (!pledge.amount || !pledge.comment || !pledge.anonymous || !pledge.project) {
+    setIsLoading(true);
+
+    if (!pledge.amount || !pledge.comment || !pledge.anonymous) {
      console.log("missing required fields");
         console.log(pledge);
+
     } else if (auth.token) {
         console.log("auth token exists");
         console.log(pledge);
-        postPledge(
-            pledge.amount,
-            pledge.comment,
-            pledge.anonymous,
-            pledge.project,
-        ).then((
-            response
-        ) => {
-            navigate(`/project/${response.id}`); // redirect to home page
+        try {
+            await postPledge(
+                pledge.amount,
+                pledge.comment,
+                pledge.anonymous,
+                projectId,
+                )
+            setPledge(initFormState)
+            setIsLoading(false);
+            navigate(0);
+        } catch (err) {
+            setIsLoading(false);
+            window.alert(err.message)
         }
-    )};
+    }
 };
 
 
 return (
-    <form>make a pledge
+    <form onSubmit={handleSubmit}>make a pledge
         <div>
             <label htmlFor="amount">Amount:</label>
             <input 
@@ -76,11 +86,10 @@ return (
             />       
         </div>
       <button 
-            type="submit" 
-            onClick={handleSubmit}>
-                submit pledge!
+            type="submit" disabled={isLoading}>
+                {isLoading ? "Loading..." : "submit pledge!"}
         </button>   
     </form>  
     );
 };
-export default NewPledgeForm;
+export default PledgeForm;

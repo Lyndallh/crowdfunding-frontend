@@ -30,15 +30,14 @@ Jobs for Sunday 25/2:
    8. [x] thinking about credentials of user posting project, is this alread working?
    
 3. [ ] Create a POST request/form for creating a NEW PLEDGE
-   1. [ ] form with state
-      1. [ ] credentials
-   2. [ ] page
-   3. [ ] url on main
-   4. [ ] navigate to project page after submit
-   5. [ ] add link on project page
-   6. [ ] api
-   7. [ ] test issues uncovered:
+   1. [x] api
+   2. [x] form with state
+      1. [x] credentials
+   3. [x] on project page
+   4. [x] navigate to project page after submit is returned
+   5. [ ] test issues uncovered:
       1. [ ] 
 
+4. [ ] fix all the forms where Onclick handleSumbit to onsubmit (the onsubmit oes at the top of the div)
 
 4. [ ] DEPLOYMENT

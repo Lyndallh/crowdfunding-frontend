@@ -1,8 +1,9 @@
 import { useParams } from "react-router-dom";
 import useProject from "../hooks/use-project";
+import PledgeForm from "../components/PledgeForm";
 
 function ProjectPage(){
-//  `useParams gets the id from the URL so that we can pass it to our useProject hook.
+//  useParams gets the id from the URL so that we can pass it to our useProject hook.
     const {id} = useParams();
  // useProject returns three pieces of info, grab all 3
     const {project, isLoading, error} = useProject(id);
@@ -31,6 +32,7 @@ return (
                 );
             })}
         </ul>
+        <PledgeForm projectId={id} />
     </div>
 );
 
