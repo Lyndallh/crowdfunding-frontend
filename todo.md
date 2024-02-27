@@ -1,4 +1,5 @@
 
+## PostUser
 1. [x] Create a POST request/form for USER SIGNUP
    1. [x] Form component
       1. [x] on login page or 
@@ -15,7 +16,7 @@
    8. [ ] error handling? (can look at GET thinkific for inspo)
       1. [x] missing required feilds
 
-
+## PostProject
 2. [ ] Create a POST request/form for creating a NEW PROJECT
    1. [x] form with state
    2. [x] page
@@ -28,7 +29,7 @@
       2. [x] isOpen needs to be is_open
    8. [x] thinking about credentials of user posting project, is this alread working?
    
-
+## PostPledge
 3. [ ] Create a POST request/form for creating a NEW PLEDGE
    1. [x] api
    2. [x] form with state
@@ -38,8 +39,11 @@
    5. [ ] test issues uncovered:
       1. [ ] 
    
+## Fixes
 4. [ ] fix the login after bringing the custom auth token
 5. [ ] fix all the forms where Onclick handleSumbit to onsubmit (the onsubmit oes at the top of the div)
 6. [ ] clean up database
+7. [ ] clean up comments
+8. [ ] clean up console.logs
 
-7. [ ] DEPLOYMENT
+## DEPLOYMENT
