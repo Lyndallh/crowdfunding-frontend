@@ -1,4 +1,3 @@
-Jobs for Sunday 25/2:
 
 1. [x] Create a POST request/form for USER SIGNUP
    1. [x] Form component
@@ -29,6 +28,7 @@ Jobs for Sunday 25/2:
       2. [x] isOpen needs to be is_open
    8. [x] thinking about credentials of user posting project, is this alread working?
    
+
 3. [ ] Create a POST request/form for creating a NEW PLEDGE
    1. [x] api
    2. [x] form with state
@@ -37,7 +37,9 @@ Jobs for Sunday 25/2:
    4. [x] navigate to project page after submit is returned
    5. [ ] test issues uncovered:
       1. [ ] 
+   
+4. [ ] fix the login after bringing the custom auth token
+5. [ ] fix all the forms where Onclick handleSumbit to onsubmit (the onsubmit oes at the top of the div)
+6. [ ] clean up database
 
-4. [ ] fix all the forms where Onclick handleSumbit to onsubmit (the onsubmit oes at the top of the div)
-
-4. [ ] DEPLOYMENT
+7. [ ] DEPLOYMENT
