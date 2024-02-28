@@ -25,10 +25,13 @@ return (
         <ul>
             {project.pledges.map((pledgeData, key) => {
                 return (
-                    <li key={key}>
-                        {pledgeData.supporter} pledged ${pledgeData.amount} and said <i>"{pledgeData.comment}"</i>
-
-                    </li>
+                    <ul key={key} className="pledges">
+                        <li>
+                        {pledgeData.supporter} pledged 
+                        ${pledgeData.amount} and said 
+                        <i>"{pledgeData.comment}"</i>
+                        </li>
+                    </ul>
                 );
             })}
         </ul>

@@ -45,5 +45,8 @@
 6. [ ] clean up database
 7. [ ] clean up comments
 8. [ ] clean up console.logs
+   
+## CSS
+1. [ ] 
 
 ## DEPLOYMENT
