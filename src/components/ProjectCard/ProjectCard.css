@@ -1,0 +1,22 @@
+.project-card {
+    color: black;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #E9E3DE;
+    min-height: 100px;
+    align-items: center;
+    height: auto; /* box grows with the size of the content */
+    flex-basis: 25%;
+    flex-grow: 1; /* box grows with the size of the content based on screensize */
+}
+
+.project-card:hover{
+    box-shadow:  0 0 10px var(--sand),0 0 20px var(--black), 0 0 30px var(--darkblue);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

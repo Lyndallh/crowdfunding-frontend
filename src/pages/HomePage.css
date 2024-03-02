@@ -1,5 +1,8 @@
+
+
 /* "CSS Reset"  */
 @import url('https://fonts.googleapis.com/css?family=Inter:400|Milonga:400|Oswald:300|Karma:600');
+
 
 html {
     box-sizing: border-box;
@@ -11,6 +14,10 @@ html {
     box-sizing: inherit;
 }
 
+:-webkit-any(link) {
+    text-decoration: none;
+    color: inherit;
+}
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
@@ -87,9 +94,39 @@ html {
     color: hotpink;
 }
 
+form {
+    background: var(--sand);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 0 50px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: left
+}
+
 #project-list {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     column-gap: 10px;
     row-gap: 10px;
+}
+
+
+.pledges {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+@media (max-width: 767px){
+    #project-list {
+        display: grid;
+        grid-template-columns: 100%;
+        column-gap: 10px;
+        row-gap: 10px;
+    }  
 }

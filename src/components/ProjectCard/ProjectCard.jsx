@@ -8,7 +8,8 @@ function ProjectCard(props) {
         <div className="project-card">
             <Link to={projectLink}>
                 <img src={projectData.image} alt = {`${projectData.title} image`}/>
-                <h3>{projectData.title}</h3>
+                <h4>{projectData.title}</h4>
+                
             </Link>
         </div>
     );

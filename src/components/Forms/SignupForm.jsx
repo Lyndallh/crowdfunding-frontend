@@ -1,9 +1,9 @@
 import { useState } from "react";
-import postUser from "../api/post-user";
-import  postLogin from "../api/post-login";
+import postUser from "../../api/post-user";
+import  postLogin from "../../api/post-login";
 
 import { useNavigate } from "react-router-dom"; // import the useNavigate hook
-import { useAuth } from "../hooks/use-auth";
+import { useAuth } from "../../hooks/use-auth";
 
 function SignupForm() {
     const navigate = useNavigate();// use the navigate hook

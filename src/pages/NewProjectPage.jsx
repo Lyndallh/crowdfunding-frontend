@@ -1,4 +1,4 @@
-import NewProjectForm from '../components/NewProjectForm';
+import NewProjectForm from '../components/Forms/NewProjectForm';
 import { useAuth } from '../hooks/use-auth';
 
 function NewProjectPage() {

@@ -1,8 +1,8 @@
 import { useState } from "react";
-import postPledge from "../api/post-pledge";
+import postPledge from "../../api/post-pledge";
 
 import { useNavigate } from "react-router-dom"; // import the useNavigate hook
-import { useAuth } from "../hooks/use-auth";
+import { useAuth } from "../../hooks/use-auth";
 
 
 const initFormState = {

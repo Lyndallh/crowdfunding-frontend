@@ -1,7 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import "./NavBar.css";
-import"../pages/HomePage.css";
-import { useAuth } from "../hooks/use-auth";
+
+import { useAuth } from "../../hooks/use-auth";
 
 function NavBar() {
 

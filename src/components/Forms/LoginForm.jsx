@@ -1,8 +1,8 @@
 import { useState } from "react";
-import postLogin from "../api/post-login";
+import postLogin from "../../api/post-login";
 
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../hooks/use-auth";
+import { useAuth } from "../../hooks/use-auth";
 
 function LoginForm() {
     const navigate = useNavigate();
@@ -31,7 +31,9 @@ const handleSubmit = (event) => {
             credentials.password
         ).then((response) => {
             window.localStorage.setItem("token", response.token);
-            setAuth({ token: response.token });
+            setAuth({ token: response.token,
+                userID: response.user_id,
+                username: response.username,});
             navigate("/"); // redirect to home page
         });
     }
