@@ -36,17 +36,24 @@
       1. [x] credentials
    3. [x] on project page
    4. [x] navigate to project page after submit is returned
-   5. [ ] test issues uncovered:
-      1. [ ] 
+   5. [ ] test issues uncovered
+
+## GetUsers
+  1. [x] Create a GET request api
+  2. [ ] replace supporter (id number) with username on pledgeCard
+
    
 ## Fixes
-4. [ ] fix the login after bringing the custom auth token
-5. [ ] fix all the forms where Onclick handleSumbit to onsubmit (the onsubmit oes at the top of the div)
-6. [ ] clean up database
-7. [ ] clean up comments
-8. [ ] clean up console.logs
+4. [x] folder restructure
+5. [ ] fix the login after bringing the custom auth token
+6. [ ] fix all the forms where Onclick handleSumbit to onsubmit (the onsubmit oes at the top of the div)
+7. [ ] clean up database
+8. [ ] clean up comments
+9. [ ] clean up console.logs
    
 ## CSS
 1. [ ] 
 
-## DEPLOYMENT
+## DEPLOYMENT [x]
+
+
