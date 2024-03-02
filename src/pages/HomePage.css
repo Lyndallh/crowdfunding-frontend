@@ -107,6 +107,23 @@ form {
     text-align: left
 }
 
+.btn{
+    background-color: var(--teal-dark);
+    color: var(--sand);
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+}
+.btn:hover{
+    box-shadow:  0 0 10px var(--sand),0 0 20px var(--black), 0 0 30px var(--darkblue);
+}
+
 #project-list {
     display: grid;
     grid-template-columns: 30% 30% 30%;

@@ -52,7 +52,7 @@
 9. [ ] clean up console.logs
    
 ## CSS
-1. [ ] 
+1. [ ] Make the top section of the homepage spilt in two like my portfolio page
 
 ## DEPLOYMENT [x]
 

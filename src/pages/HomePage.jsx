@@ -14,9 +14,11 @@ function HomePage() {
     }
     return(
         <div>
-            <Link to="/newproject">Make a request</Link>
+            <h3>Looking for help to make your dreams come true?</h3>
+            <Link className="btn" to="/newproject">Make a request</Link>
 
-            <h1>Looking to help out a budding athlete?</h1>
+            <h3>Ready to make a difference?</h3>
+            <h4>Check out these requests for help:</h4>  
             <div id="project-list">
                 {projects.map((projectData, key) => {
                     return <ProjectCard key={key} projectData={projectData} />;
