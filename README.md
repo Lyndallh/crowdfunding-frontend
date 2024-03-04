@@ -1,8 +1,21 @@
-# React + Vite
+# Crowdfunding Project (Front end with React JS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[View live site here](https://main--capable-pie-c83a54.netlify.app/)
 
-Currently, two official plugins are available:
+EquipMe is a crowdfundinng platform focused on connecting donors willing to provide financial support with individuals in need of sporting equipment.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Plan
+A list of items that were planned & implemeneted outside of structured lessons, with some items remaining for future development
+
+[Project Plan To Do List](./todo.md)
+
+## Screenshots
+
+### Responsive Homepage
+![ Screenshot of top portion of page using ResponsivelyApp - displaying mobile, tablet, laptop and desktop monitor screens for the home page](./public/HomepageScreenshot.png)
+
+### Project Creation Form
+![ A screenshot of the project creation form ](./public/ProjectCreationForm.png)
+
+### Responsive project page, with pledges
+![ Screenshot of top portion of page using ResponsivelyApp - displaying mobile, tablet, laptop and desktop monitor screens for the project and pledges page](./public/ProjectWithPledges.png)

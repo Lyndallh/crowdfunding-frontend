@@ -5,7 +5,6 @@ function NewProjectPage() {
     const { auth } = useAuth();
     return (
         <div>
-        <h1>New Project</h1>
         <NewProjectForm />
         </div>
     );
