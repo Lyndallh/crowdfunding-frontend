@@ -11,6 +11,7 @@
 #project-title{
     color: var(--darkblue);
     padding: 0 10px;
+    margin-bottom: 20px;
 }
 
 #project img{
@@ -21,7 +22,9 @@
     border-radius: 5px;
     order: 3;
 }
-
+form h4{
+    color: var(--lightblue);
+}
 #project-details{
     display: flex;
     flex-direction: column;
@@ -33,6 +36,11 @@
 #project-details h5{
     color: var(--darkblue);
 }
+
+#project-details p{
+    padding-bottom: 10px;
+}
+
 #pledges {
     display: flex;
     flex-wrap: wrap;

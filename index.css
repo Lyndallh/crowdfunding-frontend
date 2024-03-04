@@ -61,6 +61,7 @@ h1 {
 h2 {
     font-size: 2.074rem;
     font-family: 'Karma', serif; 
+    color: var(--sand);
 }
 
 h3 {
@@ -107,9 +108,9 @@ form {
 
 button{
     background-color: var(--teal-light);
-    color: var(--sand);
+    color: var(--teal-dark);
     display: inline-block;
-    margin-bottom: 0;
+    margin: 10px;
     font-weight: bold;
     text-align: center;
     vertical-align: middle;
@@ -117,11 +118,12 @@ button{
     font-size: 14px;
     line-height: 1.428571429;
     border-radius: 4px;
+    border: #2A2935;
+    box-shadow:  0 0 5px var(--black),0 0 5px var(--black), 0 0 5px var(--black);
 
 }
-
 .btn{
-    background-color: var(--teal-dark);
+    background-color: var(--teal-light);
     color: var(--sand);
     display: inline-block;
     margin-bottom: 0;
@@ -132,6 +134,9 @@ button{
     font-size: 14px;
     line-height: 1.428571429;
     border-radius: 4px;
+    border: #2A2935;
+    box-shadow:  0 0 5px var(--black),0 0 5px var(--black), 0 0 5px var(--black);
+
 }
 .btn:hover{
     box-shadow:  0 0 10px var(--sand),0 0 20px var(--black), 0 0 30px var(--darkblue);

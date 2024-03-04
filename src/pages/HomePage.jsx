@@ -19,13 +19,16 @@ function HomePage() {
                 <img className="heroImg"
                     src={hero} alt="person standing with sports equipment floating all around them"/>
                 <div id="hero-text">
-                    <h1>Equipme</h1>
+                    <h1>Making sporting dreams affordable, one athlete at a time</h1>
+                    <h4>Are you a budding athlete who's biggest hurdle is the cost of equipment?</h4>
                     <Link className="btn" to="/newproject"><h3>Make a request</h3></Link>
                 </div>  
             </section>
             <section id="projects">
-                <h2>Equip them</h2>
-                <h4>Check out these requests for help:</h4>  
+                <div id="projects-text">
+                   <h2>Looking to equip an athlete?</h2>
+                   <h4>Browse requests, gear them up for success and level the playing field today</h4>  
+                </div>
                 <div id="project-list">
                     {projects.map((projectData, key) => {
                         return <ProjectCard key={key} projectData={projectData} />;

@@ -1,8 +1,7 @@
 function AboutPage() {
     return(
         <div>
-            <h2>About Us</h2>
-            <p>Our mission is to help you fund your dreams</p>
+            <h2>At Equipme, we are all about empowering athletes to excel, without breaking the bank</h2>
 
         </div>
     );

@@ -57,27 +57,26 @@ const handleSubmit = async (event) => {
 
 
 return (
-    <form onSubmit={handleSubmit}><h4>Can you help to equipme?</h4>
+    <form onSubmit={handleSubmit}><h4>Will you help Equipme?</h4>
         <div>
-            <label htmlFor="amount">Amount:</label>
+            <label htmlFor="amount">Amount </label>
             <input 
                 type="number" 
                 id="amount" 
-                placeholder="Amount"
+                placeholder="$"
                 onChange={handleChange}
             />
         </div>
         <div>
-            <label htmlFor="comment">Comment:</label>
+            <label htmlFor="comment">Comment </label>
             <input 
                 type="text" 
                 id="comment" 
-                placeholder="comment"
                 onChange={handleChange}
             />       
         </div>
         <div>
-            <label htmlFor="anonymous">Equipme undercover:</label>
+            <label htmlFor="anonymous">Anonymous Equipper? </label>
             <input 
                 type="checkbox" 
                 id="anonymous" 

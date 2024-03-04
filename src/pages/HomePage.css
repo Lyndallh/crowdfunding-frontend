@@ -7,17 +7,16 @@
     justify-content: stretch;
     align-items: stretch;
     background-color: var(--darkblue);
-    padding: 0px;
     }
 #hero-text {
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
+    align-self: stretch;
+    flex-grow: 2;
     padding: 10px;
-    align-self: center;
-    margin: auto;
+    text-align: center;
 }
 
 #hero h1{ 
@@ -25,26 +24,44 @@
     color: var(--lightblue);
     padding: 10px;
     margin: auto;
-    
+    display: flex;
     text-shadow: 0 0 15px var(--black), 0 0 75px var(--sand);
 }
-#hero h2{ color: var(--sand);
+#hero h4{ color: var(--teal-light);
+    padding: 5px;
+    margin: auto;
+    margin-block-end: 20px;
+    max-width: 850px;
+    text-shadow: none;
+    display: flex;
+    justify-self: flex-end;
+}
+
+#hero h3{
+    color: var(--darkblue); 
     padding: 5px;
     margin: auto;
     max-width: 850px;
     text-shadow: none;
+    display: flex;
 }
 
 #projects{
-    background-color: var(--teal-light);
+    background-color: var(--teal-dark);
+    color: var(--sand);
+    padding: 10px;
 }
 
-#project-list {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    column-gap: 10px;
-    row-gap: 10px;
-}
+#projects-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        color: var(--sand);
+    }
+
+
 
 @media (max-width: 767px){
     #project-list {
@@ -62,6 +79,7 @@
         justify-content: flex-start;
         align-items: center;
         min-height: fit-content; 
+        padding: 0px;
     }
 
     #hero img {
@@ -71,15 +89,19 @@
     } 
         
     #hero-text {   
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-self: stretch;
-        flex-grow: 2; 
+        margin:10px;
+        text-align: center;
+    }
+
+    #project-list {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        column-gap: 10px;
+        row-gap: 10px;
     }
 }
 /* hero image break point */
-@media (min-width: 1370px) {   
+@media (min-width: 1800px) {   
     #hero img {
         max-width: 30%;
     }
