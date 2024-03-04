@@ -12,24 +12,25 @@ function NavBar() {
     setAuth({ token: null });
   }
   return (
-    <div>
-      <nav className="navbar">
-        <ul className="navbar-ul">
-          <li id="navbar-list">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contact">Contact Us</Link>
+    <>
+    <div className="navbar">
+      <h1 id="navbar-title">Equipme</h1>
+      <nav className="menu">
+        <ul id="navbar-list">
+          <li className="nav-item"><Link to="/">Home</Link></li>
+          <li className="nav-item"><Link to="/about">About</Link></li>
+          <li className="nav-item"><Link to="/contact">Contact Us</Link></li>
             {auth.token ? (
-              <Link to="/" onClick={handleLogout}>Logout</Link>
+          <li className="nav-item"><Link to="/" onClick={handleLogout}>Logout</Link></li>
               ):(
-                <Link to="/login">Login</Link>
+          <li className="nav-item"><Link to="/login">Login</Link></li>
               )
             }
-          </li>
         </ul>
-    </nav>
-    <Outlet />
-    </div>
+      </nav>
+      </div>
+      <Outlet />
+    </>   
   );
 }
 export default NavBar;
