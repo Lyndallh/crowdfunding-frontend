@@ -1,127 +1,42 @@
+@import './index.css';
 
-
-/* "CSS Reset"  */
-@import url('https://fonts.googleapis.com/css?family=Inter:400|Milonga:400|Oswald:300|Karma:600');
-
-
-html {
-    box-sizing: border-box;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-:-webkit-any(link) {
-    text-decoration: none;
-    color: inherit;
-}
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-:root {
-  --black: #2A2935;
-  --darkblue: #274574;
-  --teal-dark: #0A6480;
-  --teal-light: #93C6D3;
-  --lightblue: #CFDAF2;
-  --sand: #E9E3DE;
-
-/*  inherited colors  */
-  --text: #2A2935;
-}
-
-/* set default font style here */
-html, body{
-  font-size:18px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  line-height: 1.4;
-  background-color: var(--darkblue);
-}
-
-/* Add Heading styles here  */
-h1 {  
-    margin-top: 0;
-    font-size: 2.488rem;
-    font-family: 'Milonga', sans-serif;
-}
-
-h2 {
-    font-size: 2.074rem;
-    font-family: 'Karma', serif; 
-}
-
-h3 {
-    font-size: 1.728rem;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase
-}
-
-h4 {
-    font-size: 1.44rem;
-}
-
-h5{
-    font-size: 1.2rem;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-}
-
-h6{
-    font-size: 0.833rem;
-}
-
-small, .text_small {font-size: 0.6rem;}
-
-/*  testing code to show gaps */
-
-html {
-    color: hotpink;
-}
-
-form {
-    background: var(--sand);
+/* hero styling */
+#hero{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin: 0 auto;
-    max-width: 500px;
-    padding: 0 50px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    text-align: left
+    justify-content: stretch;
+    align-items: stretch;
+    background-color: var(--darkblue);
+    padding: 0px;
+    }
+#hero-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px;
+    align-self: center;
+    margin: auto;
 }
 
-.btn{
-    background-color: var(--teal-dark);
-    color: var(--sand);
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: bold;
-    text-align: center;
-    vertical-align: middle;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.428571429;
-    border-radius: 4px;
+#hero h1{ 
+    text-justify: center;
+    color: var(--lightblue);
+    padding: 10px;
+    margin: auto;
+    
+    text-shadow: 0 0 15px var(--black), 0 0 75px var(--sand);
 }
-.btn:hover{
-    box-shadow:  0 0 10px var(--sand),0 0 20px var(--black), 0 0 30px var(--darkblue);
+#hero h2{ color: var(--sand);
+    padding: 5px;
+    margin: auto;
+    max-width: 850px;
+    text-shadow: none;
+}
+
+#projects{
+    background-color: var(--teal-light);
 }
 
 #project-list {
@@ -146,4 +61,38 @@ form {
         column-gap: 10px;
         row-gap: 10px;
     }  
+}
+
+@media (min-width: 768px) {    
+    #hero {  
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: fit-content; 
+    }
+
+    #hero img {
+        max-width: 50%;
+        height: auto;
+        align-self: flex-start;   
+    } 
+        
+    #hero-text {   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: stretch;
+        flex-grow: 2; 
+    }
+}
+/* hero image break point */
+@media (min-width: 1370px) {   
+    #hero img {
+        max-width: 30%;
+    }
+
+    #hero-text {   
+    margin: 5vh 0;  
+    }
 }
