@@ -23,9 +23,7 @@ return (
             <div id = "project-title">
                 <h2>{project.title}</h2>
             </div>
-            <div>
-                <img src={project.image} alt="project"/>
-            </div>
+            <img src={project.image} alt="project"/>
             <div id="project-details">
                 {/* <h5>Requested by: </h5>
                 <p>{project.owner.username}</p> */}
@@ -38,8 +36,8 @@ return (
                 <p>{project.sum_pledges}</p>
             </div>
         </section>
-        <h5>Pledges:</h5>
-        <ul>
+        <h2 id="pledges-title">Pledges</h2>
+        <ul id="pledges">
             {project.pledges.map((pledge, key) => {
                 return ( 
                     <PledgeCard key={key}  pledge={pledge}/>
