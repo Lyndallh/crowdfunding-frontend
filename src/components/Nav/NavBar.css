@@ -1,5 +1,4 @@
 .navbar{
-  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
@@ -19,6 +18,10 @@
 .menu{
   display:flex;
 }
+#navbar-title{
+  color: var(--darkblue);
+  padding: 0 10px;
+}
 .nav-item{
   text-decoration: none;
   display: inline;
@@ -28,7 +31,7 @@
   font-family: 'Oswald', sans-serif !important;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--sand); 
+  color: var(--darkblue); 
 };
 #navbar-list{
   display: flex;
