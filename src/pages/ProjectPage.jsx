@@ -18,10 +18,10 @@ function ProjectPage(){
     return (<p>{error.message}</p>)
     }
 return (
-    <div>
+    <div id = "project-page">
         <section id="project">
             <div id = "project-title">
-                <h2>{project.title}</h2>
+                <h3>{project.title}</h3>
             </div>
             <img src={project.image} alt="project"/>
             <div id="project-details">
@@ -34,9 +34,11 @@ return (
                 <p>{project.goal}</p>
                 <h5>Amount Raised: </h5>
                 <p>{project.sum_pledges}</p>
+                <PledgeForm projectId={id} />
             </div>
         </section>
-        <h2 id="pledges-title">Pledges</h2>
+        <section id="pledges-section">
+        <h2 id="pledges-title">Equippers</h2>
         <ul id="pledges">
             {project.pledges.map((pledge, key) => {
                 return ( 
@@ -44,7 +46,7 @@ return (
                 );
             })}
         </ul>
-        <PledgeForm projectId={id} />
+        </section>
     </div>
     );
 }

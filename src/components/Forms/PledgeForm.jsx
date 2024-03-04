@@ -57,7 +57,7 @@ const handleSubmit = async (event) => {
 
 
 return (
-    <form onSubmit={handleSubmit}>make a pledge
+    <form onSubmit={handleSubmit}><h4>Can you help to equipme?</h4>
         <div>
             <label htmlFor="amount">Amount:</label>
             <input 
@@ -77,9 +77,9 @@ return (
             />       
         </div>
         <div>
-            <label htmlFor="anonymous">anonymous:</label>
+            <label htmlFor="anonymous">Equipme undercover:</label>
             <input 
-                type="boolean" 
+                type="checkbox" 
                 id="anonymous" 
                 placeholder="anonymous"
                 onChange={handleChange}
@@ -87,7 +87,7 @@ return (
         </div>
       <button 
             type="submit" disabled={isLoading}>
-                {isLoading ? "Loading..." : "submit pledge!"}
+                {isLoading ? "Loading..." : <h5>EQUIPME</h5> }
         </button>   
     </form>  
     );

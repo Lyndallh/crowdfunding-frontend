@@ -92,16 +92,32 @@ html {
 }
 
 form {
-    background: var(--sand);
+    background: var(--teal-dark);
+    color: var(--sand);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: 500px;
-    padding: 0 50px;
+    padding: 20px;
     border-radius: 10px;
     box-sizing: border-box;
     text-align: left
+}
+
+button{
+    background-color: var(--teal-light);
+    color: var(--sand);
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+
 }
 
 .btn{
