@@ -22,9 +22,9 @@
    2. [x] page
    3. [x] url on main
    4. [x] navigate to project page after submit
-   5. [ ] navbar
+   5. [x] link in hero
    6. [x] api
-   7. [ ] test issues uncovered
+   7. [x] test issues uncovered
       1. [x] end date on form
       2. [x] isOpen needs to be is_open
    8. [x] thinking about credentials of user posting project, is this alread working?
@@ -36,23 +36,33 @@
       1. [x] credentials
    3. [x] on project page
    4. [x] navigate to project page after submit is returned
-   5. [ ] test issues uncovered
+   5. [x] test issues uncovered
 
 ## GetUsers
   1. [x] Create a GET request api
   2. [ ] replace supporter (id number) with username on pledgeCard
-
    
+## ContactForm
+   [x] working form
+   [x] api posts to formspace
+   [ ] customise the form for eqiupme
+
 ## Fixes
 4. [x] folder restructure
-5. [ ] fix the login after bringing the custom auth token
+5. [x] fix the login after bringing the custom auth token
 6. [ ] fix all the forms where Onclick handleSumbit to onsubmit (the onsubmit oes at the top of the div)
-7. [ ] clean up database
-8. [ ] clean up comments
-9. [ ] clean up console.logs
+7. [x] clean up database
+8. [ ] populate database with some data
+9. [ ] clean up comments
+10. [ ] clean up console.logs
    
 ## CSS
-1. [ ] Make the top section of the homepage spilt in two like my portfolio page
+1. [x] Make the top section of the homepage spilt in two like my portfolio page
+2. [x] resonsive hero
+3. [x] responsive nav
+4. [x] responsive projects and pledges
+5. [x] accessible colours
+6. [x] accessible images
 
 ## DEPLOYMENT [x]
 
