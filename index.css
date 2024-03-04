@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:400|Milonga:400|Oswald:300|Karma:600');
+
+/* "CSS Reset"  */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a:any-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+:root {
+  --black: #2A2935;
+  --darkblue: #274574;
+  --teal-dark: #0A6480;
+  --teal-light: #93C6D3;
+  --lightblue: #CFDAF2;
+  --sand: #E9E3DE;
+  --text: #2A2935;
+}
+
+/*  default font style */
+html, body{
+  font-size:18px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  background-color: var(--darkblue);
+}
+
+/*  Heading styles   */
+h1 {  
+    margin-top: 0;
+    font-size: 2.488rem;
+    font-family: 'Milonga', sans-serif;
+}
+
+h2 {
+    font-size: 2.074rem;
+    font-family: 'Karma', serif; 
+}
+
+h3 {
+    font-size: 1.728rem;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase
+}
+
+h4 {
+    font-size: 1.44rem;
+    font-family: 'Karma', serif; 
+}
+
+h5{
+    font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+h6{
+    font-size: 0.833rem;
+}
+
+small, .text_small {font-size: 0.6rem;}
+
+/*  testing code to show gaps */
+html {
+    color: hotpink;
+}
+
+form {
+    background: var(--sand);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 0 50px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: left
+}
+
+.btn{
+    background-color: var(--teal-dark);
+    color: var(--sand);
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+}
+.btn:hover{
+    box-shadow:  0 0 10px var(--sand),0 0 20px var(--black), 0 0 30px var(--darkblue);
+}
