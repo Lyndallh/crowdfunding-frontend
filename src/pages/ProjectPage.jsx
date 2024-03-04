@@ -3,6 +3,7 @@ import useProject from "../hooks/use-project";
 import PledgeForm from "../components/Forms/PledgeForm";
 import {useAuth} from "../hooks/use-auth";
 import PledgeCard from "../components/PledgeCard/PledgeCard";
+import "./ProjectPage.css";
 
 function ProjectPage(){
 //  useParams gets the id from the URL so that we can pass it to our useProject hook.
@@ -10,40 +11,43 @@ function ProjectPage(){
  // useProject returns three pieces of info, grab all 3
     const {project, isLoading, error} = useProject(id);
     const {auth} = useAuth();
-    console.log("auth99:", auth)
-    console.log(isLoading)
     if (isLoading){
     return (<p>loading, please wait...</p>)
     }
     if (error) {
     return (<p>{error.message}</p>)
     }
-
-    console.log("pledges:", project.pledges)
 return (
     <div>
-        <h2>{project.title}</h2>
-        <h3>Created at: {project.date_created}</h3>
-        <h3>{`Status: ${project.is_open}`}</h3>
-        <h3>Pledges:</h3>
+        <section id="project">
+            <div id = "project-title">
+                <h2>{project.title}</h2>
+            </div>
+            <div>
+                <img src={project.image} alt="project"/>
+            </div>
+            <div id="project-details">
+                {/* <h5>Requested by: </h5>
+                <p>{project.owner.username}</p> */}
+                {/* I'd like to add this later if possible */}
+                <h5>Description: </h5>
+                <p>{project.description}</p>
+                <h5>Goal: </h5>
+                <p>{project.goal}</p>
+                <h5>Amount Raised: </h5>
+                <p>{project.sum_pledges}</p>
+            </div>
+        </section>
+        <h5>Pledges:</h5>
         <ul>
             {project.pledges.map((pledge, key) => {
                 return ( 
                     <PledgeCard key={key}  pledge={pledge}/>
-                    // <ul key={key} className="pledges">
-                    //     <li>
-                    //     {pledgeData.supporter} pledged 
-                    //     ${pledgeData.amount} and said 
-                    //     <i>"{pledgeData.comment}"</i>
-                    //     </li>
-                    // </ul>
                 );
             })}
         </ul>
         <PledgeForm projectId={id} />
     </div>
-);
-
+    );
 }
-
 export default ProjectPage;
